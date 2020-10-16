@@ -1,0 +1,35 @@
+I. Why do we Test?
+We write codes that might not work. 
+Write tests to ensure that it will work
+Better for collaboration and not breaking each other's codes
+Eliminate false positives
+
+    a. Motivations
+        -Check if it works
+        -Increase flexibility/reduce fear of change or refactor
+        -Very conducive to collaboration
+        -Produce documentation
+
+II. What is TDD?
+Test driven development
+Red - run the tests after writing them... screens for instances of false positives
+Green - write minimum amount of code to pass tests
+Refactor - make sure it's up to par with your company's style guide
+
+Benefits
+-Writing code that passes tests becomes easy... you just wrote the tests
+-Only write code that is required
+-Enforces modularity... testing suites will help monitor the app piece by piece
+
+III. What do we test?
+-everything
+
+Testing Pyramid
+top row   : E2E (everything is tested)
+middle row: Integration Test (5 ~ 15%)... classes interacting each other
+bottom row: Unit Test (80 ~ 90% of the code)... just one class 
+
+IV. RSpec
+Domain-Specific Language (DSL) written in Ruby for Ruby
+Meta-gem that includes rspec-core, rspec-expectations and rspec-mocks
+Not the only Ruby testing library (others include Minitest and Cucumber)
